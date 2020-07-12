@@ -1,0 +1,185 @@
+
+<template>
+  <section class="vlp-catalog">
+    <div class="vlp-container-small">
+      <h2 class="vlp-catalog__title">Каталог видань</h2>
+      <div class="vlp-catalog__content">
+        <div class="vlp-catalog__column">
+          <h3>Книги</h3>
+          <ul class="vlp-catalog__list">
+            <li>
+              <a href="#">Монографії</a>
+            </li>
+            <li>
+              <a href="#">Навчально-методичні видання</a>
+            </li>
+            <li>
+              <a href="#">Навчальні посібники</a>
+            </li>
+            <li>
+              <a href="#">Підручники</a>
+            </li>
+            <li>
+              <a href="#">Тези доповідей</a>
+            </li>
+          </ul>
+          <h3>Журнали</h3>
+          <ul class="vlp-catalog__list">
+            <li>
+              <a href="#">
+                Вісник
+                <br />Національного університету “Львівська політехніка”
+              </a>
+            </li>
+            <li>
+              <a href="#">Міжвідомчі науково-технічні збірники</a>
+            </li>
+            <li>
+              <a href="#">Наукові журнали</a>
+            </li>
+          </ul>
+        </div>
+        <div class="vlp-catalog__list--glow">
+          <h3>За рубриками</h3>
+          <ul class="vlp-catalog__list">
+            <li>
+              <a href="#">Автоматика, радіоелектроніка, телекомунікації</a>
+            </li>
+            <li>
+              <a href="#">Архітектура, містобудування</a>
+            </li>
+            <li>
+              <a href="#">Біологія, валеологія</a>
+            </li>
+            <li>
+              <a href="#">Будівництво</a>
+            </li>
+            <li>
+              <a href="#">Геодезія, картографія</a>
+            </li>
+            <li>
+              <a href="#">Економіка</a>
+            </li>
+            <li>
+              <a href="#">Електроенергетика, електромеханіка</a>
+            </li>
+            <li>
+              <a href="#">Загальнотехнічні науки</a>
+            </li>
+            <li>
+              <a href="#">Збірники тестових завдань</a>
+            </li>
+            <li>
+              <a href="#">Історія</a>
+            </li>
+            <li>
+              <a href="#">ІТ, комп'ютери</a>
+            </li>
+            <li>
+              <a href="#">Математика</a>
+            </li>
+            <li>
+              <a href="#">Мовознавство</a>
+            </li>
+            <li>
+              <a href="#">Політика, право</a>
+            </li>
+            <li>
+              <a href="#">Приладо-, машинобудування, транспорт</a>
+            </li>
+            <li>
+              <a href="#">Словники, енциклопедії, довідники</a>
+            </li>
+            <li>
+              <a href="#">Фізика</a>
+            </li>
+            <li>
+              <a href="#">Філософія, психологія, педагогіка</a>
+            </li>
+            <li>
+              <a href="#">Хімія, хімічна технологія</a>
+            </li>
+            <li>
+              <a href="#">Художня література</a>
+            </li>
+          </ul>
+          <a class="vlp-catalog__btn" href="#">дивитись усі >></a>
+        </div>
+      </div>
+    </div>
+  </section>
+</template>
+
+<script>
+export default {
+  name: "Cataloge"
+};
+</script>
+
+<style scoped lang="scss">
+body {
+  font: 300 16px/1.5 "Ubuntu";
+  line-height: 22px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #110601;
+  &:hover {
+    color: hotpink;
+  }
+}
+.vlp-catalog {
+  background: url(/img/catalog_bg.jpg) no-repeat top center;
+  padding: 50px 0;
+
+  &__title {
+    position: relative;
+    margin-bottom: 43px;
+    font: 400 36px/1.5 "Philosopher";
+    line-height: 40px;
+
+    &:after {
+      content: "";
+      width: 450px;
+      height: 0.5px;
+      position: absolute;
+      background: #110601;
+      bottom: -13%;
+      left: -3%;
+    }
+  }
+  &__content {
+    background: #fff;
+    padding: 20px 25px;
+    display: flex;
+    justify-content: space-between;
+    max-height: 527px;
+    position: relative;
+
+    & h3 {
+      font: 400 30px/1.5 "Forum";
+      line-height: 33px;
+      margin-bottom: 8px;
+    }
+  }
+  &__list {
+    margin: 0 0 40px 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-height: 440px;
+  }
+}
+</style>

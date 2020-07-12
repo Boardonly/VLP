@@ -1,21 +1,23 @@
 
 <template>
   <div class="vlp-menu">
-    <div class="vlp-menu__logo">
-      <svg width="99" height="88" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M0 88l22-73h17l23 73H39l-8-42-9 42H0z" fill="#F9D61C" />
-        <path
-          d="M63.46 24.6l2.01-1 17.01 51.67L99 65 76 0 39 15l23 73 15.05-9.36 3.31-2.05-16.9-51.99z"
-          fill="#110601"
-        />
-      </svg>
-    </div>
-    <!-- /.vlp-menu__logo -->
-    <nav class="vlp-nav">
-      <router-link to="/">Home</router-link>
-      <router-link to="/catalog">Catalog</router-link>
-      <router-link to="/contacts">Contacts</router-link>
+    <nav class="vlp-menu__nav">
+      <div class="vlp-menu__logo">
+        <svg width="99" height="88" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 88l22-73h17l23 73H39l-8-42-9 42H0z" fill="#F9D61C" />
+          <path
+            d="M63.46 24.6l2.01-1 17.01 51.67L99 65 76 0 39 15l23 73 15.05-9.36 3.31-2.05-16.9-51.99z"
+            fill="#110601"
+          />
+        </svg>
+      </div>
+      <!-- /.vlp-menu__logo -->
+      <router-link to="/">КАТАЛОГ</router-link>
+      <router-link to="/catalog">ПОДІЇ/ЦІКАВЕ</router-link>
+      <router-link to="/contacts">КОНТАКТИ</router-link>
     </nav>
+    <div class="vlp-menu__login"></div>
+    <!-- /.vlp-menu__login -->
   </div>
   <!-- /.vlp-menu -->
 </template>
@@ -26,5 +28,46 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
+.vlp-menu {
+  font: 400 20px/1.1 Philosopher, sans-serif;
+  display: flex;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background: #110601;
+    top: 63px;
+    left: 99px;
+    height: 1px;
+    width: 550px;
+  }
+  &__nav {
+	 display: flex;
+	 justify-content: space-between;
+    &__logo {
+      margin: 7px 10px 0 15px;
+    }
+    a {
+      margin-top: 39px;
+      text-decoration: none;
+      color: #110601;
+      margin-left: 65px;
+      position: relative;
+    }
+    .router-link-exact-active {
+      &::after {
+        content: "";
+        position: absolute;
+        background: rgba(255, 179, 32, 0.94);
+        top: 25px;
+        z-index: 1;
+        left: 0;
+        height: 2px;
+        width: 100%;
+      }
+    }
+  }
+}
 </style>
