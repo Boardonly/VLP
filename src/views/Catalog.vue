@@ -17,8 +17,9 @@
       <button type="submit" v-on:click="pagItemCreate">list</button>
       <input id="test" type="text" />
       <ul>
-        <li v-for="(p, i) in this.pagLength" :key="i">{{ p }}</li>
+        <li v-for="(p, i) in this.pagLength" :key="i" >{{ p }}</li>
       </ul>
+      <button  v-for="(p, i) in this.pagLength" :key="i" type="button" :value="i" v-on:click="pagItemCreate($event)">{{ p }}</button>
       <div class="vlp-catalog__list">
         <Card v-for="(book, i) in this.pagBooks" v-bind:book="book" :key="i" />
       </div>
@@ -52,7 +53,8 @@ export default {
       .then(data => {
         this.books = [...data["books-list"]];
         this.copyBooks = [...data["books-list"]];
-      });
+		})
+		.then(this.pagItemCreate)
   },
   methods: {
     sortBooks() {
@@ -71,12 +73,11 @@ export default {
       let booksLength = this.books.length;
       this.pagLength = Math.ceil(booksLength / this.renderItems);
     },
-    pagItemCreate() {
-      let q = document.getElementById("test");
-      let start = (q.value - 1) * this.renderItems;
+    pagItemCreate(arg) {
+      let q = arg.target;
+      let start = q.value * this.renderItems;
       let end = start + this.renderItems;
       this.pagBooks = this.books.slice(start, end);
-      console.log(this.pagBooks);
     }
   }
 };
