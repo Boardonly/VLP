@@ -1,4 +1,3 @@
-
 <template>
   <section class="vlp-catalog">
     <div class="vlp-container-small">
@@ -111,9 +110,7 @@
 </template>
 
 <script>
-export default {
-  name: "Cataloge"
-};
+export default {};
 </script>
 
 <style scoped lang="scss">
@@ -134,6 +131,7 @@ h6 {
 a {
   text-decoration: none;
   color: #110601;
+  margin: 0;
   &:hover {
     color: hotpink;
   }
@@ -180,6 +178,32 @@ a {
     flex-direction: column;
     flex-wrap: wrap;
     max-height: 440px;
+
+    & li {
+      max-width: 270px;
+      margin-right: 55px;
+      margin-top: 13px;
+    }
+    li + li {
+    }
   }
+
+  &__btn {
+    font: 700 16px/1.5 "Philosopher";
+    line-height: 18px;
+    position: absolute;
+    right: 26px;
+    bottom: 31px;
+  }
+}
+
+.vlp-catalog__list--glow {
+  flex-grow: 2;
+}
+
+.vlp-container-small {
+  max-width: 970px;
+
+  margin: 0 auto;
 }
 </style>

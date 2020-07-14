@@ -1,4 +1,3 @@
-
 <template>
   <div class="vlp-search">
     <form action="#" method="post" class="vlp-search__field">
@@ -28,17 +27,14 @@ export default {
 .vlp-search {
   font: 400 18px/1.1 Philosopher, sans-serif;
 	padding: 29px 0;
-
   &__field {
     margin: 20px auto 0;
     position: relative;
     max-width: 721px;
   }
-
   &__text {
     color: #999999;
   }
-
   [type="search"] {
     width: 100%;
     box-sizing: border-box;
@@ -47,7 +43,6 @@ export default {
     border: 1px solid #dfdfdf;
     color: rgb(125, 124, 129);
     outline: none;
-
     &:focus {
       box-shadow: 0px 0px 22px 0px rgba(255, 179, 32, 0.94);
     }
@@ -55,7 +50,6 @@ export default {
       color: rgba(255, 255, 255, 0);
     }
   }
-
   @media screen and (min-width: 640px) {
     [type="search"] {
       font-size: 20px;
@@ -72,7 +66,6 @@ export default {
       font-size: 24px;
     }
   }
-
   &__button {
     width: 127px;
     height: 46px;

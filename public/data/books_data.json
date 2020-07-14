@@ -8,7 +8,7 @@
     {
       "name": "Переклад як міжкультурна комунікація: англійська українська мови. Практикум :: Translation as Intercultural Communication: English Ukrainian. Practice",
       "author": "Бордюк Л. В.",
-      "img": "./img/challenge.jpg",
+      "img": "/img/card_img/challenge.jpg",
       "year": "2001",
       "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus scelerisque gravida at neque amet posuere. Amet amet, sit nulla enim aliquam tellus enim, sed scelerisque.",
       "city": "Полтава",
@@ -20,7 +20,7 @@
     {
       "name": "Риторика",
       "author": "Зоряна Куньч та ін.",
-      "img": "./img/rutoruka.jpg",
+      "img": "/img/card_img/rutoruka.jpg",
       "year": "2015",
       "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus scelerisque gravida at neque amet posuere. Amet amet, sit nulla enim aliquam tellus enim, sed scelerisque.",
       "city": "Полтава",
@@ -32,7 +32,7 @@
     {
       "name": "Маркетингові дослідження",
       "author": "Косар Н. С. та ін.",
-      "img": "./img/market.jpg",
+      "img": "/img/card_img/market.jpg",
       "year": "2020",
       "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus scelerisque gravida at neque amet posuere. Amet amet, sit nulla enim aliquam tellus enim, sed scelerisque.",
       "city": "Полтава",
@@ -44,7 +44,7 @@
     {
       "name": "Менеджмент: графічна і таблична візуалізація",
       "author": "Кузьмін О. Є. та ін.",
-      "img": "./img/menejment.jpg",
+      "img": "/img/card_img/menejment.jpg",
       "year": "1993",
       "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus scelerisque gravida at neque amet posuere. Amet amet, sit nulla enim aliquam tellus enim, sed scelerisque.",
       "city": "Полтава",
@@ -56,7 +56,7 @@
     {
       "name": "Комп’ютерна графіка",
       "author": "Василюк А. С., Мельникова Н. І.",
-      "img": "./img/compJrafics.jpg",
+      "img": "/img/card_img/compJrafics.jpg",
       "year": "2016",
       "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus scelerisque gravida at neque amet posuere. Amet amet, sit nulla enim aliquam tellus enim, sed scelerisque.",
       "city": "Ялта",
@@ -68,7 +68,7 @@
     {
       "name": "Методика викладання у загальноосвітньому навчальному закладі",
       "author": "Швай Р. І.",
-      "img": "./img/metoduka.jpg",
+      "img": "/img/card_img/metoduka.jpg",
       "year": "2017",
       "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus scelerisque gravida at neque amet posuere. Amet amet, sit nulla enim aliquam tellus enim, sed scelerisque.",
       "city": "Мачухи",
@@ -80,7 +80,7 @@
     {
       "name": "Бухгалтерський облік. Основи теорії та практики",
       "author": "Загородній А. Г. та ін.",
-      "img": "./img/buhgaler.jpg",
+      "img": "/img/card_img/buhgaler.jpg",
       "year": "2018",
       "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus scelerisque gravida at neque amet posuere. Amet amet, sit nulla enim aliquam tellus enim, sed scelerisque.",
       "city": "Васильки",
@@ -92,7 +92,7 @@
     {
       "name": "Креслення, рисунок, композиція",
       "author": "Клименюк Т. М.",
-      "img": "./img/kreslennya.jpg",
+      "img": "/img/card_img/kreslennya.jpg",
       "year": "2019",
       "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus scelerisque gravida at neque amet posuere. Amet amet, sit nulla enim aliquam tellus enim, sed scelerisque.",
       "city": "Лубни",
@@ -104,7 +104,7 @@
     {
       "name": "LINGVO HOOK. Zaloguj się do języka polskiego",
       "author": "Укладачі Р. І. Васьків, М. Є. Захарчук, М. І. Кулинич, О. В.",
-      "img": "./img/lingvoHook.jpg",
+      "img": "/img/card_img/lingvoHook.jpg",
       "year": "2020",
       "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus scelerisque gravida at neque amet posuere. Amet amet, sit nulla enim aliquam tellus enim, sed scelerisque.",
       "city": "Дніпро",
@@ -116,7 +116,7 @@
     {
       "name": "Теплоізоляційні матеріали та вироби для теплових промислових агрегатів",
       "author": "Солоха І. В. та ін.",
-      "img": "./img/teploizoliatsia.jpg",
+      "img": "/img/card_img/teploizoliatsia.jpg",
       "year": "1888",
       "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus scelerisque gravida at neque amet posuere. Amet amet, sit nulla enim aliquam tellus enim, sed scelerisque.",
       "city": "Львів",
@@ -128,7 +128,7 @@
     {
       "name": "Еколого-економічні ризики у підприємництві",
       "author": "Бець М. Т.",
-      "img": "./img/eco-riscs.jpg",
+      "img": "/img/card_img/eco-riscs.jpg",
       "year": "1922",
       "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus scelerisque gravida at neque amet posuere. Amet amet, sit nulla enim aliquam tellus enim, sed scelerisque.",
       "city": "Ужгород",
@@ -140,7 +140,7 @@
     {
       "name": "Етика бізнесу",
       "author": "Фарат О. В.",
-      "img": "./img/buzinessEtics.jpg",
+      "img": "/img/card_img/buzinessEtics.jpg",
       "year": "1943",
       "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus scelerisque gravida at neque amet posuere. Amet amet, sit nulla enim aliquam tellus enim, sed scelerisque.",
       "city": "Харків",
@@ -152,7 +152,7 @@
     {
       "name": "Збірник тестових завдань з української мови",
       "author": "Укладачі Г. Л. Вознюк, І. П. Василишин, І. Б. Ментинська",
-      "img": "./img/ukraineLanguage.jpg",
+      "img": "/img/card_img/ukraineLanguage.jpg",
       "year": "1992",
       "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus scelerisque gravida at neque amet posuere. Amet amet, sit nulla enim aliquam tellus enim, sed scelerisque.",
       "city": "Київ",
@@ -164,7 +164,7 @@
     {
       "name": "Менеджмент персоналу",
       "author": "Данько Т. І.",
-      "img": "./img/personManagement.jpg",
+      "img": "/img/card_img/personManagement.jpg",
       "year": "1999",
       "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus scelerisque gravida at neque amet posuere. Amet amet, sit nulla enim aliquam tellus enim, sed scelerisque.",
       "city": "Будапешт",
@@ -176,7 +176,7 @@
     {
       "name": "Розвиток промислового потенціалу: економічне оцінювання, просторові аспекти та державне управління",
       "author": "Станасюк Н. С.",
-      "img": "./img/rozvutok.jpg",
+      "img": "/img/card_img/rozvutok.jpg",
       "year": "2011",
       "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus scelerisque gravida at neque amet posuere. Amet amet, sit nulla enim aliquam tellus enim, sed scelerisque.",
       "city": "Конотоп",
@@ -188,7 +188,7 @@
     {
       "name": "Оптимізація режимів електроенергетичних систем",
       "author": "Журахівський А. В. та ін.",
-      "img": "./img/electricOptimization.jpg",
+      "img": "/img/card_img/electricOptimization.jpg",
       "year": "2012",
       "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus scelerisque gravida at neque amet posuere. Amet amet, sit nulla enim aliquam tellus enim, sed scelerisque.",
       "city": "Пирятин",
@@ -200,7 +200,7 @@
     {
       "name": "Господарський процес",
       "author": "Дембіцька С. Л., Зільник Н. М.",
-      "img": "./img/gospodar.jpg",
+      "img": "/img/card_img/gospodar.jpg",
       "year": "2009",
       "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus scelerisque gravida at neque amet posuere. Amet amet, sit nulla enim aliquam tellus enim, sed scelerisque.",
       "city": "Яготин",
@@ -212,7 +212,7 @@
     {
       "name": "Давид Бурлюк. Українські корені засновника світового авангарду: поезія, малярство, театр, спорт",
       "author": "Ігор Савицький, Олесь Нога",
-      "img": "./img/gospodar.jpg",
+      "img": "/img/card_img/gospodar.jpg",
       "year": "2010",
       "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus scelerisque gravida at neque amet posuere. Amet amet, sit nulla enim aliquam tellus enim, sed scelerisque.",
       "city": "Херсон",
@@ -224,7 +224,7 @@
     {
       "name": "Фізична хімія",
       "author": "Волошинець В. А., Решетняк О. В.",
-      "img": "./img/physicalChemistry.jpg",
+      "img": "/img/card_img/physicalChemistry.jpg",
       "year": "2008",
       "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus scelerisque gravida at neque amet posuere. Amet amet, sit nulla enim aliquam tellus enim, sed scelerisque.",
       "city": "Жажки",
@@ -236,7 +236,7 @@
     {
       "name": "Управління дорожнім рухом на регульованих перехрестях у містах",
       "author": "За заг. ред. проф. Є. Ю. ",
-      "img": "./img/roadsManagament.jpg",
+      "img": "/img/card_img/roadsManagament.jpg",
       "year": "2007",
       "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus scelerisque gravida at neque amet posuere. Amet amet, sit nulla enim aliquam tellus enim, sed scelerisque.",
       "city": "Кропивницький",
@@ -248,7 +248,7 @@
     {
       "name": "Структура і динаміка геофізичних полів у західній Антарктиці",
       "author": "Бахмутов В. Г., Третяк К. Р., Максимчук В. Ю., Глотов В. М., Греку Р. Х., Єгорова Т. П., Залізовський А. В., Колосков О. В., Корчагін І. М., Проненко В. О.",
-      "img": "./img/struktura.jpg",
+      "img": "/img/card_img/struktura.jpg",
       "year": "2007",
       "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus scelerisque gravida at neque amet posuere. Amet amet, sit nulla enim aliquam tellus enim, sed scelerisque.",
       "city": "Черкаси",
@@ -260,7 +260,7 @@
     {
       "name": "Формування дискусійної компетенції у студентів-філологів на основіавтентичних суспільно-політичних та художніх текстів",
       "author": "Янісів М. П., Левченко О. П., Ділай М. П., Ліхнякевич І. О. ",
-      "img": "./img/formuvannia.jpg",
+      "img": "/img/card_img/formuvannia.jpg",
       "year": "2006",
       "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus scelerisque gravida at neque amet posuere. Amet amet, sit nulla enim aliquam tellus enim, sed scelerisque.",
       "city": "Одеса",
@@ -272,7 +272,7 @@
     {
       "name": "Заповідна справа",
       "author": "Чайка О. Г., Мокрий В. І.",
-      "img": "./img/zapovidna.jpg",
+      "img": "/img/card_img/zapovidna.jpg",
       "year": "2005",
       "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus scelerisque gravida at neque amet posuere. Amet amet, sit nulla enim aliquam tellus enim, sed scelerisque.",
       "city": "Жорівка",
@@ -284,7 +284,7 @@
     {
       "name": "Гвафічна система Autocad",
       "author": "Жожоб О. Г., Чвакало В. І.",
-      "img": "./img/autocad.jpg",
+      "img": "/img/card_img/autocad.jpg",
       "year": "1773",
       "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus scelerisque gravida at neque amet posuere. Amet amet, sit nulla enim aliquam tellus enim, sed scelerisque.",
       "city": "Карлівка",
@@ -296,7 +296,7 @@
     {
       "name": "Архітектура світла в українській церкві",
       "author": "Яців М. Б., Криворучко Ю. І.",
-      "img": "./img/lightInChor.jpg",
+      "img": "/img/card_img/lightInChor.jpg",
       "year": "2018",
       "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus scelerisque gravida at neque amet posuere. Amet amet, sit nulla enim aliquam tellus enim, sed scelerisque.",
       "city": "Миколаїв",
@@ -308,7 +308,7 @@
     {
       "name": "Інтеграційні процеси у професійній освіті: методологія, теорія, методики",
       "author": "Козловський Ю. М.",
-      "img": "./img/invests.jpg",
+      "img": "/img/card_img/invests.jpg",
       "year": "2019",
       "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus scelerisque gravida at neque amet posuere. Amet amet, sit nulla enim aliquam tellus enim, sed scelerisque.",
       "city": "Миколаїв",
@@ -320,7 +320,7 @@
     {
       "name": "Суспільний статус староукраїнської (руської) мови у ХIV–ХVII століттях: мовна свідомість, мовна дійсність, мовна перспектива",
       "author": "Ірина Фаріон",
-      "img": "./img/status.jpg",
+      "img": "/img/card_img/status.jpg",
       "year": "2017",
       "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus scelerisque gravida at neque amet posuere. Amet amet, sit nulla enim aliquam tellus enim, sed scelerisque.",
       "city": "Черкаси",
@@ -332,7 +332,7 @@
     {
       "name": "Багатокритеріальний аналіз і синтез нелінійних резонансних вібраційних машин",
       "author": "Гурський В. М.",
-      "img": "./img/bagatokru.jpg",
+      "img": "/img/card_img/bagatokru.jpg",
       "year": "2015",
       "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus scelerisque gravida at neque amet posuere. Amet amet, sit nulla enim aliquam tellus enim, sed scelerisque.",
       "city": "Бердянськ",
@@ -344,7 +344,7 @@
     {
       "name": "Структура і динаміка геофізичних полів у Західній Антарктиці",
       "author": "Бахмутов В.Г.  та ін.",
-      "img": "./img/antarctida.jpg",
+      "img": "/img/card_img/antarctida.jpg",
       "year": "2015",
       "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus scelerisque gravida at neque amet posuere. Amet amet, sit nulla enim aliquam tellus enim, sed scelerisque.",
       "city": "Антарктида",
@@ -356,7 +356,7 @@
     {
       "name": "Виховання духовності студентської молоді у ноосферному вимірі",
       "author": "Тюріна Т. Г.",
-      "img": "./img/spirits.jpg",
+      "img": "/img/card_img/spirits.jpg",
       "year": "2012",
       "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus scelerisque gravida at neque amet posuere. Amet amet, sit nulla enim aliquam tellus enim, sed scelerisque.",
       "city": "Макухівка",
