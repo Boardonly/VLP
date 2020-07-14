@@ -14,7 +14,7 @@
         <!-- /.vlp-catalog__sort -->
       </div>
       <div class="vlp-catalog__list">
-        <Card v-for="book in this.books" v-bind:book="book" />
+        <Card v-for="(book, i) in this.books" v-bind:book="book" :key=i />
       </div>
     </div>
     <!-- /.vlp-container -->
