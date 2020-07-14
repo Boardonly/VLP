@@ -7,14 +7,20 @@
           <p>сортувати за...</p>
           <select name="sort" id="sort" v-on:change="sortBooks">
             <option value="stock" selected>популярністю</option>
-            <option value="lowerPrice">ціною вниз</option>
-            <option value="highetPrice">ціною вгору</option>
+            <option value="lowerPrice">ціною вгору</option>
+            <option value="highetPrice">ціною вниз</option>
           </select>
         </div>
         <!-- /.vlp-catalog__sort -->
       </div>
+      <button type="submit" v-on:click="listCount">click</button>
+      <button type="submit" v-on:click="pagItemCreate">list</button>
+      <input id="test" type="text" />
+      <ul>
+        <li v-for="(p, i) in this.pagLength" :key="i">{{ p }}</li>
+      </ul>
       <div class="vlp-catalog__list">
-        <Card v-for="(book, i) in this.books" v-bind:book="book" :key=i />
+        <Card v-for="(book, i) in this.pagBooks" v-bind:book="book" :key="i" />
       </div>
     </div>
     <!-- /.vlp-container -->
@@ -34,7 +40,10 @@ export default {
   data() {
     return {
       books: null,
-      copyBooks: null
+      copyBooks: null,
+      pagBooks: null,
+      renderItems: 20,
+      pagLength: null
     };
   },
   created() {
@@ -49,7 +58,6 @@ export default {
     sortBooks() {
       let newBooks = [...this.books];
       let oldBooks = [...this.books];
-      console.log(oldBooks);
       let select = document.getElementById("sort");
       if (select.value === "lowerPrice") {
         this.books = newBooks.sort((a, b) => a.price - b.price);
@@ -58,6 +66,17 @@ export default {
       } else if (select.value === "stock") {
         this.books = this.copyBooks;
       }
+    },
+    listCount() {
+      let booksLength = this.books.length;
+      this.pagLength = Math.ceil(booksLength / this.renderItems);
+    },
+    pagItemCreate() {
+      let q = document.getElementById("test");
+      let start = (q.value - 1) * this.renderItems;
+      let end = start + this.renderItems;
+      this.pagBooks = this.books.slice(start, end);
+      console.log(this.pagBooks);
     }
   }
 };
