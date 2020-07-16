@@ -1,25 +1,30 @@
 <template>
   <div class="vlp-catalog">
     <div class="vlp-container--small">
+      <h3 class="vlp-path">Головна/Каталог</h3>
       <h2 class="vlp-catalog__title">Усі видання</h2>
       <div class="vlp-catalog__nav">
         <div class="vlp-catalog__sort">
           <p>сортувати за...</p>
           <select name="sort" id="sort" v-on:change="sortBooks">
-            <option value="stock" selected>популярністю</option>
+            <option style="display:none" selected></option>
+            <option value="stock">популярністю</option>
             <option value="lowerPrice">ціною вгору</option>
             <option value="highetPrice">ціною вниз</option>
           </select>
         </div>
         <!-- /.vlp-catalog__sort -->
+        <div class="vlp-catalog__pag">
+          <button
+            v-for="(p, i) in this.pagLength"
+            :key="i"
+            type="button"
+            :value="i"
+            v-on:click="pagItemCreate($event)"
+          >{{ p }}</button>
+        </div>
+        <!-- /.vlp-catalog__pag -->
       </div>
-      <button type="submit" v-on:click="listCount">click</button>
-      <button type="submit" v-on:click="pagItemCreate">list</button>
-      <input id="test" type="text" />
-      <ul>
-        <li v-for="(p, i) in this.pagLength" :key="i" >{{ p }}</li>
-      </ul>
-      <button  v-for="(p, i) in this.pagLength" :key="i" type="button" :value="i" v-on:click="pagItemCreate($event)">{{ p }}</button>
       <div class="vlp-catalog__list">
         <Card v-for="(book, i) in this.pagBooks" v-bind:book="book" :key="i" />
       </div>
@@ -40,11 +45,11 @@ export default {
   },
   data() {
     return {
-      books: null,
-      copyBooks: null,
-      pagBooks: null,
+      books: [],
+      copyBooks: [],
+      pagBooks: [],
       renderItems: 20,
-      pagLength: null
+      pagLength: []
     };
   },
   created() {
@@ -53,8 +58,9 @@ export default {
       .then(data => {
         this.books = [...data["books-list"]];
         this.copyBooks = [...data["books-list"]];
-		})
-		.then(this.pagItemCreate)
+        this.listCount();
+        this.pagItemCreate();
+      });
   },
   methods: {
     sortBooks() {
@@ -63,10 +69,13 @@ export default {
       let select = document.getElementById("sort");
       if (select.value === "lowerPrice") {
         this.books = newBooks.sort((a, b) => a.price - b.price);
+        this.pagItemCreate();
       } else if (select.value === "highetPrice") {
         this.books = newBooks.sort((a, b) => b.price - a.price);
+        this.pagItemCreate();
       } else if (select.value === "stock") {
         this.books = this.copyBooks;
+        this.pagItemCreate();
       }
     },
     listCount() {
@@ -74,8 +83,12 @@ export default {
       this.pagLength = Math.ceil(booksLength / this.renderItems);
     },
     pagItemCreate(arg) {
-      let q = arg.target;
-      let start = q.value * this.renderItems;
+      let q = 0;
+      if (arg) {
+        q = arg.target.value;
+      }
+      console.log(q);
+      let start = q * this.renderItems;
       let end = start + this.renderItems;
       this.pagBooks = this.books.slice(start, end);
     }
@@ -87,7 +100,64 @@ export default {
 .vlp-catalog {
   display: flex;
   text-align: center;
+  font-family: Philosopher;
+  font-size: 18px;
+  line-height: 1.1;
+  &__sort {
+    display: flex;
+    align-items: center;
+    > p {
+      margin: 0 5px;
+    }
+    select {
+      font-family: Philosopher;
+      font-size: 18px;
+      line-height: 1.1;
+      position: relative;
+      outline: none;
+      border: 1px solid transparent;
 
+      &::after {
+        position: absolute;
+        content: "";
+        z-index: 1;
+        width: 10px;
+        height: 10px;
+        border: 6px solid transparent;
+        border-color: #ffd177;
+      }
+    }
+  }
+  &__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #110601;
+    padding-bottom: 2px;
+    margin-top: 63px;
+  }
+  &__pag {
+    button + button {
+      margin-left: 1px;
+    }
+
+    > button {
+      border: 1px solid transparent;
+      background: transparent;
+      outline: none;
+
+      border-radius: 2px;
+      height: 29px;
+      width: 29px;
+
+      &:active,
+      &:hover,
+      &:focus {
+        background: #f8d39b;
+        border: 1px solid transparent;
+      }
+    }
+  }
   &__list {
     display: flex;
     flex-direction: column;
@@ -113,6 +183,7 @@ export default {
   &__title {
     font: 400 36px/1.1 "Philosopher", sans-serif;
     position: relative;
+    margin-top: 150px;
     &::after {
       content: "";
       height: 1px;

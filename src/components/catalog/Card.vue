@@ -1,7 +1,7 @@
 
 <template>
   <div class="vlp-card">
-     <img v-bind:src="book.img" :alt="book.author" />
+    <img v-bind:src="book.img" :alt="book.author" />
     <h3 class="vlp-card__title">{{book.name}}</h3>
     <cite class="vlp-card__author">{{book.author}}</cite>
     <p class="vlp-card__price">{{book.price}} грн</p>
@@ -12,7 +12,6 @@
 export default {
   props: ["book"],
   name: "Card"
-  
 };
 // console.log(book)
 </script>
@@ -23,8 +22,9 @@ export default {
   flex-direction: column;
   align-items: center;
   margin: 45px 15px 0;
-  img{
-	  max-width: 185px;
+  img {
+    max-width: 185px;
+    width: 100%;
   }
   p,
   cite {
@@ -35,8 +35,8 @@ export default {
     color: #110601;
   }
   &__author {
-	 font: 300 12px/1.416 "Ubuntu", sans-serif;
-	 font-style: italic;
+    font: 300 12px/1.416 "Ubuntu", sans-serif;
+    font-style: italic;
     color: #7f7979;
   }
   &__price {
