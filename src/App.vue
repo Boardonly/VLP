@@ -2,6 +2,7 @@
   <div class="vlp-main">
  	 <Header />
     <router-view />
+	 <Footer />
   </div>
 </template>
 
