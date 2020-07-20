@@ -3,18 +3,19 @@
   <div class="vlp-menu">
     <nav class="vlp-menu__nav">
       <div class="vlp-menu__logo">
-        <svg width="99" height="88" fill="none" xmlns="http://www.w3.org/2000/svg">
+        
+      </div>
+      <!-- /.vlp-menu__logo -->
+      <router-link class="notlink" to="/"><svg width="99" height="88" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M0 88l22-73h17l23 73H39l-8-42-9 42H0z" fill="#F9D61C" />
           <path
             d="M63.46 24.6l2.01-1 17.01 51.67L99 65 76 0 39 15l23 73 15.05-9.36 3.31-2.05-16.9-51.99z"
             fill="#110601"
           />
-        </svg>
-      </div>
-      <!-- /.vlp-menu__logo -->
-      <router-link to="/">КАТАЛОГ</router-link>
-      <router-link to="/catalog">ПОДІЇ/ЦІКАВЕ</router-link>
-      <router-link to="/contacts">КОНТАКТИ</router-link>
+        </svg></router-link>
+      <router-link class="link" to="/catalog">КАТАЛОГ</router-link>
+      <router-link class="link" to="/#">ПОДІЇ/ЦІКАВЕ</router-link>
+      <router-link class="link" to="/contacts">КОНТАКТИ</router-link>
     </nav>
     <div class="vlp-menu__login"></div>
     <!-- /.vlp-menu__login -->
@@ -48,15 +49,18 @@ export default {
 	 justify-content: space-between;
     &__logo {
       margin: 7px 10px 0 15px;
-    }
-    a {
+	 }
+	 .notlink{
+		 margin: 0 0 0 15px;
+	 }
+	  a {
       margin-top: 39px;
       text-decoration: none;
       color: #110601;
       margin-left: 65px;
       position: relative;
     }
-    .router-link-exact-active {
+    .router-link-exact-active.link {
       &::after {
         content: "";
         position: absolute;
