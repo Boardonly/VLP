@@ -18,6 +18,7 @@
           <button
             v-for="(p, i) in this.pagLength"
             :key="i"
+            :class="btnValue == i ? 'active': '' "
             type="button"
             :value="i"
             v-on:click="pagItemCreate($event)"
@@ -41,7 +42,7 @@ import Card from "@/components/catalog/Card.vue";
 export default {
   name: "Catalog",
   components: {
-    Card
+    Card,
   },
   data() {
     return {
@@ -49,13 +50,14 @@ export default {
       copyBooks: [],
       pagBooks: [],
       renderItems: 20,
-      pagLength: []
+      pagLength: 0,
+      btnValue: 0,
     };
   },
   created() {
     fetch("data/books_data.json")
-      .then(result => result.json())
-      .then(data => {
+      .then((result) => result.json())
+      .then((data) => {
         this.books = [...data["books-list"]];
         this.copyBooks = [...data["books-list"]];
         this.listCount();
@@ -83,16 +85,14 @@ export default {
       this.pagLength = Math.ceil(booksLength / this.renderItems);
     },
     pagItemCreate(arg) {
-      let q = 0;
       if (arg) {
-        q = arg.target.value;
+        this.btnValue = arg.target.value;
       }
-      console.log(q);
-      let start = q * this.renderItems;
+      let start = this.btnValue * this.renderItems;
       let end = start + this.renderItems;
       this.pagBooks = this.books.slice(start, end);
-    }
-  }
+    },
+  },
 };
 </script>
 
@@ -152,7 +152,8 @@ export default {
 
       &:active,
       &:hover,
-      &:focus {
+      &:focus,
+      &.active {
         background: #f8d39b;
         border: 1px solid transparent;
       }
