@@ -3,7 +3,7 @@
     <h2>Події/Цікаве</h2>
     <div class="lvp-img__content">
       <div class="lvp-sea">
-        <img src="/public/img/photo.jpg" alt="photo" />
+        <img src="/img/photo.jpg" alt="photo" />
         <h3>Хай живуть канікули!</h3>
         <p>
           Дорогі Автори, Читачі, Покупці!
@@ -12,7 +12,7 @@
         </p>
       </div>
       <div class="lvp-books">
-        <img src="/public/img/photo2.jpg" alt="photo" />
+        <img src="/img/photo2.jpg" alt="photo" />
         <h3>Двадцять найкращих книжок століття, перекладених українською</h3>
         <p>
           Дорогі Автори, Читачі, Покупці!
@@ -21,7 +21,7 @@
         </p>
       </div>
       <div class="lvp-book">
-        <img src="/public/img/photo3.jpg" alt="photo" />
+        <img src="/img/photo3.jpg" alt="photo" />
         <h3>28 червня – День Конституції України</h3>
         <p>Держава починається з мене.</p>
       </div>
@@ -66,7 +66,7 @@ export default {
     display: flex;
     flex-wrap: wrap;
 	 justify-content: space-between;
-    div {
+    div {	 
       max-width: 296px;
       max-height: 326px;
       margin-left: 30px;
