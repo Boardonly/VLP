@@ -11,7 +11,7 @@
 <script>
 export default {
   props: ["book"],
-  name: "Card"
+  name: "Card",
 };
 // console.log(book)
 </script>

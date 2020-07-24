@@ -2,11 +2,10 @@
   <div class="vlp-home">
     <Search />
     <v-cataloge />
+    <Interest />
     <Events />
-	 <Interest />
-	 <Events />
     <CatalogeMob />
-    <v-footer />
+    <Footer />
   </div>
   <!-- /.vlp-home -->
 </template>
@@ -26,13 +25,13 @@ export default {
   name: "Home",
   components: {
     Header,
-	 Search,
-	 Interest,
-	 Events,
-	 Footer,
+    Search,
+    Interest,
+    Events,
+    Footer,
     "v-cataloge": Cataloge,
-    CatalogeMob
-  }
+    CatalogeMob,
+  },
 };
 </script>
 <style lang="scss">

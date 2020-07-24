@@ -31,18 +31,20 @@
       </div>
     </div>
     <!-- /.vlp-container -->
-    <!-- /.vlp-catalog__list -->
+  	 <Slider :books="this.books"/>
   </div>
 </template>
 
 
 <script>
 import Card from "@/components/catalog/Card.vue";
+import Slider from "@/components/catalog/Slider.vue";
 
 export default {
   name: "Catalog",
   components: {
     Card,
+	 Slider,
   },
   data() {
     return {
@@ -98,7 +100,7 @@ export default {
 
 <style lang="scss" scoped>
 .vlp-catalog {
-  display: flex;
+//   display: flex;
   text-align: center;
   font-family: Philosopher;
   font-size: 18px;
