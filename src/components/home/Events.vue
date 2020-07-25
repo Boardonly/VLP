@@ -34,8 +34,7 @@ export default {
   padding: 36px 0 67px 32px;
 
   h1 {
-    font: 300 64px/1.5 Philosopher;
-    line-height: 72px;
+    font: 300 34px/1.5 Philosopher;
     margin-left: 35px;
     color: #7f7979;
   }
@@ -43,12 +42,15 @@ export default {
     padding: 56px 0 97px 62px;
     h1 {
       margin-left: 45px;
+      font-size: 44px;
     }
   }
   @media screen and (min-width: 1024px) {
     padding: 76px 0 97px 192px;
     h1 {
       margin-left: 105px;
+      font-size: 64px;
+      line-height:т 72px;
     }
   }
   .vpl-img {

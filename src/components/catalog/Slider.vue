@@ -74,6 +74,7 @@ export default {
               //   rows: 2,
               slidesToShow: 1,
               //   slidesToScroll: 1,
+              arrows: false,
             },
           },
         ],
@@ -112,16 +113,26 @@ export default {
     margin-bottom: 43px;
     font: 400 36px/1.5 "Philosopher";
     line-height: 40px;
-    text-align: left;
-
-    &:after {
+	 text-align: left;
+	 &:after {
       content: "";
-      width: 450px;
+      width: 325px;
       height: 0.5px;
       position: absolute;
       background: #110601;
       bottom: -12%;
       left: -3%;
+    }
+    @media screen and (min-width: 640px) {
+      &:after {
+        content: "";
+        width: 450px;
+        height: 0.5px;
+        position: absolute;
+        background: #110601;
+        bottom: -12%;
+        left: -3%;
+      }
     }
   }
   .slick-dots li > button:before {
@@ -144,13 +155,16 @@ export default {
   //     }
   //   }
   .vlp-slider-btn {
-    position: absolute;
-    top: 50%;
-    text-decoration: none;
-    border: none;
-    background: transparent;
-    outline: transparent;
-    cursor: pointer;
+    display: none;
+    @media screen and (min-width: 640px) {
+      position: absolute;
+      top: 50%;
+      text-decoration: none;
+      border: none;
+      background: transparent;
+      outline: transparent;
+      cursor: pointer;
+    }
     //  transform: translate(-50%, -50%);
   }
   [data-works-left] {

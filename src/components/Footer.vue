@@ -104,7 +104,10 @@ li {
       opacity: 0.15;
     }
     img {
-      padding: 25px 79px 37px 107px;
+      padding: 0px;
+      @media screen and (min-width: 640px) {
+        padding: 25px 79px 37px 107px;
+      }
     }
     background: #c4c4c4;
     //  opacity: 0.15;
