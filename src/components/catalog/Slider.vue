@@ -1,9 +1,11 @@
 <template>
   <div class="vlp-new">
-    <div class="vlp-continer">
+    <div class="vlp-container--small">
       <h2 class="vlp-new__title">{{main.title}}</h2>
+    </div>
+    <div class="vlp-continer">
       <div class="vlp-new__slider">
-        <VueSlickCarousel v-bind="settings" ref="carousel"  v-if="this.books && this.books.length">
+        <VueSlickCarousel v-bind="settings" ref="carousel" v-if="this.books && this.books.length">
           <div class="vlp-card" v-for="(book, i) in this.books" :key="i">
             <img v-bind:src="book.img" :alt="book.author" />
             <div class="vlp-card__content" :style="{backgroundColor: `${book.color}`}">
@@ -15,247 +17,6 @@
               </p>
             </div>
           </div>
-
-          <!-- <div class="vlp-card" >
-            <img v-bind:src="books[0].img" :alt="books[0].author" />
-            <div class="vlp-card__content" :style="{backgroundColor: `${books[0].color}`}">
-              <h3 class="vlp-card__title">{{books[0].name}}</h3>
-              <cite class="vlp-card__author">{{books[0].author}}</cite>
-              <p class="vlp-card__price">
-                {{books[0].price}}
-                <span>грн</span>
-              </p>
-            </div>
-           
-          </div>
-          <div class="vlp-card">
-            <img v-bind:src="books[0].img" :alt="books[0].author" />
-            <div class="vlp-card__content" :style="{backgroundColor: `${books[0].color}`}">
-              <h3 class="vlp-card__title">{{books[0].name}}</h3>
-              <cite class="vlp-card__author">{{books[0].author}}</cite>
-              <p class="vlp-card__price">
-                {{books[0].price}}
-                <span>грн</span>
-              </p>
-            </div>
-           
-          </div>
-          <div class="vlp-card">
-            <img v-bind:src="books[0].img" :alt="books[0].author" />
-            <div class="vlp-card__content" :style="{backgroundColor: `${books[0].color}`}">
-              <h3 class="vlp-card__title">{{books[0].name}}</h3>
-              <cite class="vlp-card__author">{{books[0].author}}</cite>
-              <p class="vlp-card__price">
-                {{books[0].price}}
-                <span>грн</span>
-              </p>
-            </div>
-           
-          </div>
-          <div class="vlp-card">
-            <img v-bind:src="books[0].img" :alt="books[0].author" />
-            <div class="vlp-card__content" :style="{backgroundColor: `${books[0].color}`}">
-              <h3 class="vlp-card__title">{{books[0].name}}</h3>
-              <cite class="vlp-card__author">{{books[0].author}}</cite>
-              <p class="vlp-card__price">
-                {{books[0].price}}
-                <span>грн</span>
-              </p>
-            </div>
-           
-          </div>
-          <div class="vlp-card">
-            <img v-bind:src="books[0].img" :alt="books[0].author" />
-            <div class="vlp-card__content" :style="{backgroundColor: `${books[0].color}`}">
-              <h3 class="vlp-card__title">{{books[0].name}}</h3>
-              <cite class="vlp-card__author">{{books[0].author}}</cite>
-              <p class="vlp-card__price">
-                {{books[0].price}}
-                <span>грн</span>
-              </p>
-            </div>
-           
-          </div>
-          <div class="vlp-card">
-            <img v-bind:src="books[0].img" :alt="books[0].author" />
-            <div class="vlp-card__content" :style="{backgroundColor: `${books[0].color}`}">
-              <h3 class="vlp-card__title">{{books[0].name}}</h3>
-              <cite class="vlp-card__author">{{books[0].author}}</cite>
-              <p class="vlp-card__price">
-                {{books[0].price}}
-                <span>грн</span>
-              </p>
-            </div>
-           
-          </div>
-          <div class="vlp-card">
-            <img v-bind:src="books[0].img" :alt="books[0].author" />
-            <div class="vlp-card__content" :style="{backgroundColor: `${books[0].color}`}">
-              <h3 class="vlp-card__title">{{books[0].name}}</h3>
-              <cite class="vlp-card__author">{{books[0].author}}</cite>
-              <p class="vlp-card__price">
-                {{books[0].price}}
-                <span>грн</span>
-              </p>
-            </div>
-           
-          </div>
-          <div class="vlp-card">
-            <img v-bind:src="books[0].img" :alt="books[0].author" />
-            <div class="vlp-card__content" :style="{backgroundColor: `${books[0].color}`}">
-              <h3 class="vlp-card__title">{{books[0].name}}</h3>
-              <cite class="vlp-card__author">{{books[0].author}}</cite>
-              <p class="vlp-card__price">
-                {{books[0].price}}
-                <span>грн</span>
-              </p>
-            </div>
-           
-          </div>
-          <div class="vlp-card">
-            <img v-bind:src="books[0].img" :alt="books[0].author" />
-            <div class="vlp-card__content" :style="{backgroundColor: `${books[0].color}`}">
-              <h3 class="vlp-card__title">{{books[0].name}}</h3>
-              <cite class="vlp-card__author">{{books[0].author}}</cite>
-              <p class="vlp-card__price">
-                {{books[0].price}}
-                <span>грн</span>
-              </p>
-            </div>
-           
-          </div>
-          <div class="vlp-card">
-            <img v-bind:src="books[0].img" :alt="books[0].author" />
-            <div class="vlp-card__content" :style="{backgroundColor: `${books[0].color}`}">
-              <h3 class="vlp-card__title">{{books[0].name}}</h3>
-              <cite class="vlp-card__author">{{books[0].author}}</cite>
-              <p class="vlp-card__price">
-                {{books[0].price}}
-                <span>грн</span>
-              </p>
-            </div>
-           
-          </div>
-          <div class="vlp-card">
-            <img v-bind:src="books[0].img" :alt="books[0].author" />
-            <div class="vlp-card__content" :style="{backgroundColor: `${books[0].color}`}">
-              <h3 class="vlp-card__title">{{books[0].name}}</h3>
-              <cite class="vlp-card__author">{{books[0].author}}</cite>
-              <p class="vlp-card__price">
-                {{books[0].price}}
-                <span>грн</span>
-              </p>
-            </div>
-           
-          </div>
-          <div class="vlp-card">
-            <img v-bind:src="books[0].img" :alt="books[0].author" />
-            <div class="vlp-card__content" :style="{backgroundColor: `${books[0].color}`}">
-              <h3 class="vlp-card__title">{{books[0].name}}</h3>
-              <cite class="vlp-card__author">{{books[0].author}}</cite>
-              <p class="vlp-card__price">
-                {{books[0].price}}
-                <span>грн</span>
-              </p>
-            </div>
-           
-          </div>
-          <div class="vlp-card">
-            <img v-bind:src="books[0].img" :alt="books[0].author" />
-            <div class="vlp-card__content" :style="{backgroundColor: `${books[0].color}`}">
-              <h3 class="vlp-card__title">{{books[0].name}}</h3>
-              <cite class="vlp-card__author">{{books[0].author}}</cite>
-              <p class="vlp-card__price">
-                {{books[0].price}}
-                <span>грн</span>
-              </p>
-            </div>
-           
-          </div>
-          <div class="vlp-card">
-            <img v-bind:src="books[0].img" :alt="books[0].author" />
-            <div class="vlp-card__content" :style="{backgroundColor: `${books[0].color}`}">
-              <h3 class="vlp-card__title">{{books[0].name}}</h3>
-              <cite class="vlp-card__author">{{books[0].author}}</cite>
-              <p class="vlp-card__price">
-                {{books[0].price}}
-                <span>грн</span>
-              </p>
-            </div>
-           
-          </div>
-          <div class="vlp-card">
-            <img v-bind:src="books[0].img" :alt="books[0].author" />
-            <div class="vlp-card__content" :style="{backgroundColor: `${books[0].color}`}">
-              <h3 class="vlp-card__title">{{books[0].name}}</h3>
-              <cite class="vlp-card__author">{{books[0].author}}</cite>
-              <p class="vlp-card__price">
-                {{books[0].price}}
-                <span>грн</span>
-              </p>
-            </div>
-           
-          </div>
-          <div class="vlp-card">
-            <img v-bind:src="books[0].img" :alt="books[0].author" />
-            <div class="vlp-card__content" :style="{backgroundColor: `${books[0].color}`}">
-              <h3 class="vlp-card__title">{{books[0].name}}</h3>
-              <cite class="vlp-card__author">{{books[0].author}}</cite>
-              <p class="vlp-card__price">
-                {{books[0].price}}
-                <span>грн</span>
-              </p>
-            </div>
-           
-          </div>
-          <div class="vlp-card">
-            <img v-bind:src="books[0].img" :alt="books[0].author" />
-            <div class="vlp-card__content" :style="{backgroundColor: `${books[0].color}`}">
-              <h3 class="vlp-card__title">{{books[0].name}}</h3>
-              <cite class="vlp-card__author">{{books[0].author}}</cite>
-              <p class="vlp-card__price">
-                {{books[0].price}}
-                <span>грн</span>
-              </p>
-            </div>
-           
-          </div>
-          <div class="vlp-card">
-            <img v-bind:src="books[0].img" :alt="books[0].author" />
-            <div class="vlp-card__content" :style="{backgroundColor: `${books[0].color}`}">
-              <h3 class="vlp-card__title">{{books[0].name}}</h3>
-              <cite class="vlp-card__author">{{books[0].author}}</cite>
-              <p class="vlp-card__price">
-                {{books[0].price}}
-                <span>грн</span>
-              </p>
-            </div>
-           
-          </div>
-          <div class="vlp-card">
-            <img v-bind:src="books[0].img" :alt="books[0].author" />
-            <div class="vlp-card__content" :style="{backgroundColor: `${books[0].color}`}">
-              <h3 class="vlp-card__title">{{books[0].name}}</h3>
-              <cite class="vlp-card__author">{{books[0].author}}</cite>
-              <p class="vlp-card__price">
-                {{books[0].price}}
-                <span>грн</span>
-              </p>
-            </div>
-           
-          </div>
-          <div class="vlp-card">
-            <img v-bind:src="books[0].img" :alt="books[0].author" />
-            <div class="vlp-card__content" :style="{backgroundColor: `${books[0].color}`}">
-              <h3 class="vlp-card__title">{{books[0].name}}</h3>
-              <cite class="vlp-card__author">{{books[0].author}}</cite>
-              <p class="vlp-card__price">
-                {{books[0].price}}
-                <span>грн</span>
-              </p>
-            </div>
-           
-          </div>-->
         </VueSlickCarousel>
         <button @click="this.showPrev" class="vlp-slider-btn" data-works-left>
           <svg width="32" height="60" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -275,6 +36,7 @@
         </button>
       </div>
       <!-- /.vlp-new__slider -->
+      <a class="vlp-new__link" href="/catalog">{{main.link}}</a>
     </div>
     <!-- /.vlp-container -->
   </div>
@@ -302,6 +64,10 @@ export default {
         slidesPerRow: 1,
         arrows: true,
         dots: true,
+        autoplay: true,
+        speed: 2000,
+        autoplaySpeed: 5000,
+        //   cssEase: "linear",
       },
     };
   },
@@ -316,7 +82,6 @@ export default {
     showPrev() {
       this.$refs.carousel.prev();
     },
-   
   },
 };
 </script>
@@ -324,11 +89,50 @@ export default {
 <style scoped lang="scss" scoped>
 .vlp-new {
   position: relative;
-  .slick-slide {
-    & > div + div {
-      margin: 15px;
+  padding: 100px 0;
+  &__link {
+    font: 700 16px/1.5 "Philosopher";
+    line-height: 18px;
+    position: absolute;
+    right: 27px;
+    bottom: 30px;
+  }
+  &__title {
+    position: relative;
+    margin-bottom: 43px;
+    font: 400 36px/1.5 "Philosopher";
+    line-height: 40px;
+    text-align: left;
+
+    &:after {
+      content: "";
+      width: 450px;
+      height: 0.5px;
+      position: absolute;
+      background: #110601;
+      bottom: -12%;
+      left: -3%;
     }
   }
+  .slick-dots li > button:before {
+    font-family: "slick";
+    font-size: 14px;
+    line-height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    content: "•";
+    text-align: center;
+    opacity: 0.25;
+    color: red;
+  }
+  //   .slick-slide {
+  //     & > div + div {
+  //       margin: 15px;
+  //     }
+  //   }
   .vlp-slider-btn {
     position: absolute;
     top: 50%;
@@ -354,28 +158,34 @@ export default {
 .vlp-card {
   display: flex !important;
   text-align: left;
-  //   margin: 15px;
+  height: 240px;
+  margin: 15px 0;
   img {
-    max-width: 245px;
-    width: 100%;
-    flex-grow: 1;
+    //  max-width: 245px;
+    //  width: 100%;
+    object-fit: contain;
   }
   &__content {
     display: flex;
     flex-direction: column;
     max-width: 330px;
     padding: 36px 45px 20px;
+    flex-grow: 1; //   margin: 15px;
   }
   &__title {
     font: 400 22px/1.222 "Forum", sans-serif;
     color: #110601;
     margin: 0;
+    height: 118px;
+    overflow: hidden;
   }
   &__author {
     font-family: Ubuntu;
     font-weight: 300;
     font-size: 14px;
     line-height: 1.714;
+    height: 46px;
+    overflow: hidden;
   }
   &__price {
     font-size: 36px;

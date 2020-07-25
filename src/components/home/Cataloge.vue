@@ -170,6 +170,7 @@ a {
 .vlp-catalog {
   background: url('/img/catalog_bg.jpg') no-repeat top center;
   background-size: cover;
+  text-align: left;
   padding: 50px 0;
   @media screen and (max-width:639px){
 	  display: none;

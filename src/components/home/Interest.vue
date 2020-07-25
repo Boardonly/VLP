@@ -48,7 +48,7 @@ export default {
 .lvp-interest {
   max-width: 1176px;
   margin: 0 auto;
-  //  padding: 100px 92px 98px 76px;
+  padding: 100px 0;
   color: #110601;
 
   h2 {
@@ -57,9 +57,9 @@ export default {
     font-weight: normal;
     font-size: 36px;
     line-height: 40px;
-    margin: 100px 0 50px 56px;
+    margin: 0px 0 50px 56px;
     &:after {
-      content: "";
+      // content: "";
       width: 450px;
       height: 0.5px;
       position: absolute;

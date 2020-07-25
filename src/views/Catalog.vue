@@ -1,37 +1,58 @@
 <template>
   <div class="vlp-catalog">
+    <h3 class="vlp-path">Головна/Каталог</h3>
     <div class="vlp-container--small">
-      <h3 class="vlp-path">Головна/Каталог</h3>
-      <h2 class="vlp-catalog__title">Усі видання</h2>
-      <div class="vlp-catalog__nav">
-        <div class="vlp-catalog__sort">
-          <p>сортувати за...</p>
-          <select name="sort" id="sort" v-on:change="sortBooks">
-            <option style="display:none" selected></option>
-            <option value="stock">популярністю</option>
-            <option value="lowerPrice">ціною вгору</option>
-            <option value="highetPrice">ціною вниз</option>
-          </select>
+      <div class="vlp-catalog__content">
+        <h2 class="vlp-catalog__title">Усі видання</h2>
+        <div class="vlp-catalog__nav">
+          <div class="vlp-catalog__sort">
+            <p>сортувати за...</p>
+            <select name="sort" id="sort" v-on:change="sortBooks">
+              <option style="display:none" selected></option>
+              <option value="stock">популярністю</option>
+              <option value="lowerPrice">ціною вгору</option>
+              <option value="highetPrice">ціною вниз</option>
+            </select>
+          </div>
+          <!-- /.vlp-catalog__sort -->
+          <div class="vlp-catalog__pag">
+            <button
+              v-for="(p, i) in this.pagLength"
+              :key="i"
+              :class="btnValue == i ? 'active': '' "
+              type="button"
+              :value="i"
+              v-on:click="pagItemCreate($event)"
+            >{{ p }}</button>
+          </div>
+          <!-- /.vlp-catalog__pag -->
         </div>
-        <!-- /.vlp-catalog__sort -->
-        <div class="vlp-catalog__pag">
-          <button
-            v-for="(p, i) in this.pagLength"
-            :key="i"
-            :class="btnValue == i ? 'active': '' "
-            type="button"
-            :value="i"
-            v-on:click="pagItemCreate($event)"
-          >{{ p }}</button>
+        <div class="vlp-catalog__list">
+          <Card v-for="(book, i) in this.pagBooks" v-bind:book="book" :key="i" />
         </div>
-        <!-- /.vlp-catalog__pag -->
+        <div class="vlp-catalog__nav">
+          <div class="vlp-catalog__sort">
+            <p>показано {{renderItems}} результатів з {{books.length}}</p>
+          </div>
+          <!-- /.vlp-catalog__sort -->
+          <div class="vlp-catalog__pag">
+            <button
+              v-for="(p, i) in this.pagLength"
+              :key="i"
+              :class="btnValue == i ? 'active': '' "
+              type="button"
+              :value="i"
+              v-on:click="pagItemCreate($event)"
+            >{{ p }}</button>
+          </div>
+          <!-- /.vlp-catalog__pag -->
+        </div>
       </div>
-      <div class="vlp-catalog__list">
-        <Card v-for="(book, i) in this.pagBooks" v-bind:book="book" :key="i" />
-      </div>
+      <!-- /.vlp-catalog__content -->
     </div>
     <!-- /.vlp-container -->
-  	 <Slider :books="this.books"/>
+    <v-cataloge />
+    <Slider :books="this.books" />
   </div>
 </template>
 
@@ -39,12 +60,14 @@
 <script>
 import Card from "@/components/catalog/Card.vue";
 import Slider from "@/components/catalog/Slider.vue";
+import Cataloge from "@/components/home/Cataloge.vue";
 
 export default {
   name: "Catalog",
   components: {
     Card,
-	 Slider,
+    Slider,
+    "v-cataloge": Cataloge,
   },
   data() {
     return {
@@ -100,11 +123,19 @@ export default {
 
 <style lang="scss" scoped>
 .vlp-catalog {
-//   display: flex;
+  //   display: flex;
   text-align: center;
   font-family: Philosopher;
   font-size: 18px;
   line-height: 1.1;
+  padding-bottom: 100px;
+
+  .vlp-path {
+    margin: 97px 0 0 93px;
+  }
+  &__content {
+    padding-bottom: 100px;
+  }
   &__sort {
     display: flex;
     align-items: center;
@@ -186,7 +217,6 @@ export default {
   &__title {
     font: 400 36px/1.1 "Philosopher", sans-serif;
     position: relative;
-    margin-top: 150px;
     &::after {
       content: "";
       height: 1px;

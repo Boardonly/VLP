@@ -2,6 +2,7 @@
   <div class="vlp-home">
     <Search />
     <v-cataloge />
+    <Slider :books="this.books" />
     <Interest />
     <Events />
     <CatalogeMob />
@@ -19,6 +20,8 @@ import Cataloge from "@/components/home/Cataloge.vue";
 import Interest from "@/components/home/Interest.vue";
 import Events from "@/components/home/Events.vue";
 import Footer from "@/components/Footer.vue";
+import Slider from "@/components/catalog/Slider.vue";
+
 import CatalogeMob from "@/components/home/CatalogeMob.vue";
 
 export default {
@@ -26,11 +29,24 @@ export default {
   components: {
     Header,
     Search,
+    Slider,
     Interest,
     Events,
     Footer,
     "v-cataloge": Cataloge,
     CatalogeMob,
+  },
+  data() {
+    return {
+      books: [],
+    };
+  },
+  created() {
+    fetch("data/books_data.json")
+      .then((result) => result.json())
+      .then((data) => {
+        this.books = [...data["books-list"]];
+      });
   },
 };
 </script>
