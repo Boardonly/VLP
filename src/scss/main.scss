@@ -1,7 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Forum&family=Philosopher:wght@400;700&family=Ubuntu:ital,wght@0,300;1,300&display=swap");
 
+
+
 .vlp-container--small {
   max-width: 940px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.vlp-container {
+  max-width: 1210px;
   margin: 0 auto;
   padding: 0 20px;
 }
