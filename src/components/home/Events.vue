@@ -1,6 +1,9 @@
 <template>
   <div class="vpl-events">
-    <h1>Видавництво <br>“Львівська політехніка”</h1>
+    <h1>
+      Видавництво
+      <br />“Львівська політехніка”
+    </h1>
     <div class="vpl-img">
       <div class="vlp-content">
         <p class="vlp-italic">
@@ -22,7 +25,7 @@ export default {
   name: "Events",
   data() {
     return {};
-  }
+  },
 };
 </script>
 
@@ -30,16 +33,16 @@ export default {
 .vpl-events {
   padding: 76px 0 97px 192px;
   h1 {
-    font:300 64px/1.5  Philosopher;
-	 line-height: 72px;
-	 margin-left: 105px;
+    font: 300 64px/1.5 Philosopher;
+    line-height: 72px;
+    margin-left: 105px;
 
     /* text gray */
 
     color: #7f7979;
   }
   .vpl-img {
-    background: url(/img/image.jpg) no-repeat right;
+    background: url('/img/image.jpg') no-repeat right;
   }
   .vlp-content {
     max-width: 704px;
