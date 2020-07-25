@@ -71,8 +71,8 @@ export default {
           {
             breakpoint: 1024,
             settings: {
-            //   rows: 2,
-                slidesToShow: 1,
+              //   rows: 2,
+              slidesToShow: 1,
               //   slidesToScroll: 1,
             },
           },

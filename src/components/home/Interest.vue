@@ -74,7 +74,6 @@ export default {
     justify-content: space-between;
     div {
       max-width: 296px;
-      max-height: 326px;
       margin-left: 30px;
     }
     h3 {

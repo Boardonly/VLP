@@ -168,7 +168,7 @@ a {
   }
 }
 .vlp-catalog {
-  background: url("'../img/catalog_bg.jpg'") no-repeat top center;
+  background: url("~@/assets/catalog_bg.jpg") no-repeat top center;
   background-size: cover;
   text-align: left;
   padding: 50px 0;

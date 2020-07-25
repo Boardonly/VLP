@@ -159,5 +159,20 @@ li {
       }
     }
   }
+  @media screen and (max-width: 640px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .ba-coll {
+      width: 100%;
+      text-align: center;
+      padding: 0 auto;
+    }
+    .vlp-coll-left {
+      img {
+        padding: 0 auto;
+      }
+    }
+  }
 }
 </style>

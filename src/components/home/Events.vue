@@ -31,18 +31,28 @@ export default {
 
 <style lang="scss">
 .vpl-events {
-  padding: 76px 0 97px 192px;
+  padding: 36px 0 67px 32px;
+
   h1 {
     font: 300 64px/1.5 Philosopher;
     line-height: 72px;
-    margin-left: 105px;
-
-    /* text gray */
-
+    margin-left: 35px;
     color: #7f7979;
   }
+  @media screen and (min-width: 640px) {
+    padding: 56px 0 97px 62px;
+    h1 {
+      margin-left: 45px;
+    }
+  }
+  @media screen and (min-width: 1024px) {
+    padding: 76px 0 97px 192px;
+    h1 {
+      margin-left: 105px;
+    }
+  }
   .vpl-img {
-    background: url("'../img/image.jpg'") no-repeat right;
+    background: url("~@/assets/image.jpg") no-repeat right;
   }
   .vlp-content {
     max-width: 704px;
