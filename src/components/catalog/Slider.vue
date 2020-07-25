@@ -3,7 +3,7 @@
     <div class="vlp-continer">
       <h2 class="vlp-new__title">{{main.title}}</h2>
       <div class="vlp-new__slider">
-        <VueSlickCarousel v-bind="this.settings" ref="carousel">
+        <VueSlickCarousel v-bind="settings" ref="carousel">
           <div class="vlp-card" v-for="(book, i) in this.books" :key="i">
             <img v-bind:src="book.img" :alt="book.author" />
             <div class="vlp-card__content" :style="{backgroundColor: `${book.color}`}">
@@ -59,7 +59,7 @@ export default {
         slidesToShow: 2,
         speed: 500,
         rows: 2,
-        slidesPerRow: 1,
+      //   slidesPerRow: 1,
         arrows: true,
         dots: true,
       },
