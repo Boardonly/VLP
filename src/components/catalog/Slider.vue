@@ -3,10 +3,8 @@
     <div class="vlp-continer">
       <h2 class="vlp-new__title">{{main.title}}</h2>
       <div class="vlp-new__slider">
-        <VueSlickCarousel v-bind="settings" ref="carousel">
-          
-			 
-			 <!-- <div class="vlp-card" v-for="(book, i) in this.books" :key="i">
+        <VueSlickCarousel v-bind="settings" ref="carousel"  v-if="this.books && this.books.length">
+          <div class="vlp-card" v-for="(book, i) in this.books" :key="i">
             <img v-bind:src="book.img" :alt="book.author" />
             <div class="vlp-card__content" :style="{backgroundColor: `${book.color}`}">
               <h3 class="vlp-card__title">{{book.name}}</h3>
@@ -16,9 +14,9 @@
                 <span>грн</span>
               </p>
             </div>
-          </div>-->
+          </div>
 
-          <div class="vlp-card">
+          <!-- <div class="vlp-card" >
             <img v-bind:src="books[0].img" :alt="books[0].author" />
             <div class="vlp-card__content" :style="{backgroundColor: `${books[0].color}`}">
               <h3 class="vlp-card__title">{{books[0].name}}</h3>
@@ -28,7 +26,7 @@
                 <span>грн</span>
               </p>
             </div>
-            <!-- /.vlp-card__content -->
+           
           </div>
           <div class="vlp-card">
             <img v-bind:src="books[0].img" :alt="books[0].author" />
@@ -40,7 +38,7 @@
                 <span>грн</span>
               </p>
             </div>
-            <!-- /.vlp-card__content -->
+           
           </div>
           <div class="vlp-card">
             <img v-bind:src="books[0].img" :alt="books[0].author" />
@@ -52,7 +50,7 @@
                 <span>грн</span>
               </p>
             </div>
-            <!-- /.vlp-card__content -->
+           
           </div>
           <div class="vlp-card">
             <img v-bind:src="books[0].img" :alt="books[0].author" />
@@ -64,7 +62,7 @@
                 <span>грн</span>
               </p>
             </div>
-            <!-- /.vlp-card__content -->
+           
           </div>
           <div class="vlp-card">
             <img v-bind:src="books[0].img" :alt="books[0].author" />
@@ -76,7 +74,7 @@
                 <span>грн</span>
               </p>
             </div>
-            <!-- /.vlp-card__content -->
+           
           </div>
           <div class="vlp-card">
             <img v-bind:src="books[0].img" :alt="books[0].author" />
@@ -88,7 +86,7 @@
                 <span>грн</span>
               </p>
             </div>
-            <!-- /.vlp-card__content -->
+           
           </div>
           <div class="vlp-card">
             <img v-bind:src="books[0].img" :alt="books[0].author" />
@@ -100,7 +98,7 @@
                 <span>грн</span>
               </p>
             </div>
-            <!-- /.vlp-card__content -->
+           
           </div>
           <div class="vlp-card">
             <img v-bind:src="books[0].img" :alt="books[0].author" />
@@ -112,7 +110,7 @@
                 <span>грн</span>
               </p>
             </div>
-            <!-- /.vlp-card__content -->
+           
           </div>
           <div class="vlp-card">
             <img v-bind:src="books[0].img" :alt="books[0].author" />
@@ -124,7 +122,7 @@
                 <span>грн</span>
               </p>
             </div>
-            <!-- /.vlp-card__content -->
+           
           </div>
           <div class="vlp-card">
             <img v-bind:src="books[0].img" :alt="books[0].author" />
@@ -136,7 +134,7 @@
                 <span>грн</span>
               </p>
             </div>
-            <!-- /.vlp-card__content -->
+           
           </div>
           <div class="vlp-card">
             <img v-bind:src="books[0].img" :alt="books[0].author" />
@@ -148,7 +146,7 @@
                 <span>грн</span>
               </p>
             </div>
-            <!-- /.vlp-card__content -->
+           
           </div>
           <div class="vlp-card">
             <img v-bind:src="books[0].img" :alt="books[0].author" />
@@ -160,7 +158,7 @@
                 <span>грн</span>
               </p>
             </div>
-            <!-- /.vlp-card__content -->
+           
           </div>
           <div class="vlp-card">
             <img v-bind:src="books[0].img" :alt="books[0].author" />
@@ -172,7 +170,7 @@
                 <span>грн</span>
               </p>
             </div>
-            <!-- /.vlp-card__content -->
+           
           </div>
           <div class="vlp-card">
             <img v-bind:src="books[0].img" :alt="books[0].author" />
@@ -184,7 +182,7 @@
                 <span>грн</span>
               </p>
             </div>
-            <!-- /.vlp-card__content -->
+           
           </div>
           <div class="vlp-card">
             <img v-bind:src="books[0].img" :alt="books[0].author" />
@@ -196,7 +194,7 @@
                 <span>грн</span>
               </p>
             </div>
-            <!-- /.vlp-card__content -->
+           
           </div>
           <div class="vlp-card">
             <img v-bind:src="books[0].img" :alt="books[0].author" />
@@ -208,7 +206,7 @@
                 <span>грн</span>
               </p>
             </div>
-            <!-- /.vlp-card__content -->
+           
           </div>
           <div class="vlp-card">
             <img v-bind:src="books[0].img" :alt="books[0].author" />
@@ -220,7 +218,7 @@
                 <span>грн</span>
               </p>
             </div>
-            <!-- /.vlp-card__content -->
+           
           </div>
           <div class="vlp-card">
             <img v-bind:src="books[0].img" :alt="books[0].author" />
@@ -232,7 +230,7 @@
                 <span>грн</span>
               </p>
             </div>
-            <!-- /.vlp-card__content -->
+           
           </div>
           <div class="vlp-card">
             <img v-bind:src="books[0].img" :alt="books[0].author" />
@@ -244,7 +242,7 @@
                 <span>грн</span>
               </p>
             </div>
-            <!-- /.vlp-card__content -->
+           
           </div>
           <div class="vlp-card">
             <img v-bind:src="books[0].img" :alt="books[0].author" />
@@ -256,8 +254,8 @@
                 <span>грн</span>
               </p>
             </div>
-            <!-- /.vlp-card__content -->
-          </div>
+           
+          </div>-->
         </VueSlickCarousel>
         <button @click="this.showPrev" class="vlp-slider-btn" data-works-left>
           <svg width="32" height="60" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -301,7 +299,7 @@ export default {
         slidesToShow: 2,
         speed: 500,
         rows: 2,
-          slidesPerRow: 1,
+        slidesPerRow: 1,
         arrows: true,
         dots: true,
       },
@@ -310,6 +308,7 @@ export default {
   components: {
     VueSlickCarousel,
   },
+
   methods: {
     showNext() {
       this.$refs.carousel.next();
@@ -317,6 +316,7 @@ export default {
     showPrev() {
       this.$refs.carousel.prev();
     },
+   
   },
 };
 </script>
