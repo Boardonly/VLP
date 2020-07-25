@@ -67,6 +67,16 @@ export default {
         autoplay: true,
         speed: 2000,
         autoplaySpeed: 5000,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+            //   rows: 2,
+                slidesToShow: 1,
+              //   slidesToScroll: 1,
+            },
+          },
+        ],
         //   cssEase: "linear",
       },
     };

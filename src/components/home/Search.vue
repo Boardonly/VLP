@@ -77,7 +77,8 @@ export default {
     border: 1px solid #636262;
     color: #8a748f;
     position: absolute;
-    top: 0px;
+	 top: 0px;
+	 right: 0px;
     outline: none;
     &:hover {
       border: 1px solid currentColor;
