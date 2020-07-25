@@ -42,7 +42,7 @@ export default {
     color: #7f7979;
   }
   .vpl-img {
-    background: url('/img/image.jpg') no-repeat right;
+    background: url("'../img/image.jpg'") no-repeat right;
   }
   .vlp-content {
     max-width: 704px;
