@@ -5,7 +5,7 @@
     <Interest />
     <Events />
     <CatalogeMob />
-    <Footer />
+    <!-- <Footer /> -->
   </div>
   <!-- /.vlp-home -->
 </template>
